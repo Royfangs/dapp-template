@@ -1,5 +1,3 @@
-# llamas dapp website
-
 ## Quick Start
 
 ```javascript
