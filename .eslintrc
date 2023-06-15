@@ -1,0 +1,37 @@
+{
+  "plugins": ["prettier"],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+    "camelcase": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unused-prop-types": "off",
+    "react/require-default-props": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never",
+        "js": "never",
+        "jsx": "never"
+      }
+    ],
+    "quotes": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ]
+  }
+}
